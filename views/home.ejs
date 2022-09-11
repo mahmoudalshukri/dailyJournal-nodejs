@@ -1,0 +1,20 @@
+<!-- challenge 3 start -->
+<!-- challenge 4 start -->
+<%- include('partials/header') -%>
+<h1>Home Page</h1>
+<p><%= homeContent %></p>
+<!-- challenge 12 start -->
+<!-- <%for(let i = 0; i < posts.length; i++){%>
+    <h1><%= posts[i].postTitle %></h1>
+    <p><%= posts[i].postBody %></p>
+<%}%> -->
+<!-- challenge 12 end -->
+<!-- challenge 14,15 start -->
+<% posts.forEach(post => {%>
+    <h1><%= post.postTitle %></h1>
+    <p><%= post.postBody.substring(0,100) + '...' %> <a href="/posts/<%=post.postTitle%>" + post.postTitle>Read More</a></p>
+<%});%>
+<!-- challenge 14,15 end -->
+<%- include('partials/footer') -%>
+<!-- challenge 4 end -->
+<!-- challenge 3 end -->

@@ -1,0 +1,20 @@
+<!-- challenge 7 start -->
+<%- include('partials/header') -%>
+<h1>Add New Post</h1>
+<!-- challenge 9 start -->
+<form action="/compose" method="post">
+    <div class="m-5">
+        <div class="m-5">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" class="form-control" id="title" name="postTitle">
+        </div>
+        <div class="m-5">
+            <label for="post" class="form-label">Post</label>
+            <textarea name="postBody" id="post" cols="30" rows="10" class="form-control"></textarea>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<!-- challenge 9 end -->
+<%- include('partials/footer') -%>
+<!-- challenge 7 end -->
